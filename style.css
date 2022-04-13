@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Beau+Rivage&family=IBM+Plex+Mono:ital,wght@1,100&family=Josefin+Sans:wght@300&family=Ubuntu:ital,wght@0,400;1,300&family=Varela+Round&display=swap');
+
+body
+{
+    background-color: black;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+nav
+{
+    font-family: 'Ubuntu', sans-serif;
+}
+/* Home About comes in one line */
+nav ul{
+    display: flex; 
+    align-items: center;
+    list-style-type: none;
+    height: 58px;
+    background-color: black;
+    color: white;
+}
+
+nav ul li{
+    padding: 0 18px;
+}
+
+.brand{
+    display: flex;
+    align-items: center;
+    font-weight: bolder;
+    font-size: 1.5rem;
+    font-family:'IBM Plex Mono', sans-serif;
+}
+
+.container{
+    min-height: 62vh;
+    background-color: black;
+    color: white;
+    font-weight: bolder;
+    font-family: 'Josefin Sans', sans-serif;
+    display: flex;
+    margin: 18px auto;
+    width: 85%;
+    border-radius: 18px;
+    padding: 34px;
+    background-image: url('log1.jpg');
+}
+
+.bottom{
+    position: sticky;
+    height: 108px;
+    background-color: black;
+    color: white;
+    bottom:0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.icons{
+    margin-top: 14px;
+}
+
+.icons i{
+    cursor: pointer;
+}
+
+#progressBar{
+    width: 80vw;
+    cursor: pointer;
+}
+
+.songItemContainer{
+    margin-top: 58px;
+}
+
+.songItem{
+    height: 50px;
+    display: flex;
+    background-color: aliceblue;
+    color: black;
+    width: 218%;
+    margin: 12px 0;
+    border-radius: 34px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 18px;
+}
+
+.songItem img{
+    width: 45px;
+    border-radius: 34px;
+}
+
+.timestamp i{
+    cursor: pointer;
+}
+
+.songInfo{
+    position: absolute;
+    left: 0;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.songInfo img{
+    opacity: 0;
+    transition: opacity 0.4s ease-in;
+}
